@@ -1,0 +1,182 @@
+@font-face {font-family:'Pretendard';
+    src:local('font/static/woff2/Pretendard-Regular.woff2'),
+    url('Pretendard-Regular.woff2') format('woff2'); }
+    @font-face {font-family:'PretendardSemiBold';
+    src:local('font/static/woff2/Pretendard-SemiBold.woff2'),
+    url('Pretendard-SemiBold.woff2') format('woff2'); }
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+/* Reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 폰트 설정 */
+* {font-family: Pretendard,'Noto Sans KR', sans-serif;}
+
+/* CSS 설정 */
+body {
+    margin: 0; /* body의 마진 제거 */
+    padding: 0; /* body의 패딩 제거 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+}
+
+
+/* 레이아웃의 부모 컨테이너 */
+#container{
+    width: 100%; height: 100vh;
+}
+
+/* 헤더 */
+.header{
+    width: 100%; height: 90px;
+    background: white;
+    /* float: top; */
+}
+/* 로고 */
+.logoimg{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 22px;
+    margin-right: 1px;
+    margin-left: 200px;
+}
+/* 로고 옆 이름 */
+.name{
+    width: 180px; height:30px;
+    float: left;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.35em;
+
+}
+/* 내비게이션바 */
+.navbardiv{
+    float: left;
+}
+/* 내비게이션 ul */
+.navbar_ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    height: 90px;
+    width: 800px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 110px;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+/* 내비게이션 li */
+/* 하이퍼링크 기본, 방문했을 때 표시 */
+.navbar_ul li a:link,a:visited{
+    margin: 31px;
+    text-decoration: none;
+    color: #333333;
+}
+
+/* 메인 */
+.main{
+    width: 100%; height: 540px;
+    position: relative;
+    background: url('src/ppt/media/image3.png');
+    background-size:cover;
+}
+/* 메인 이미지 마스크 */
+.img_mask{
+    width: 100%; height: 540px;
+    position: absolute;
+    background: rgba(0,0,0, 0.3);
+}
+/* 메인 문구 레이아웃*/
+.caption{
+    width: 1050px;
+    height: 540px;
+    position: relative;
+    float: right;
+    color: white;
+    text-shadow:1px 1px 2px #7c7c7c;
+}
+.main_capiton1{
+    width: 900px; height: 50px;
+    line-height: 190px;
+    font-size: 2.6em;
+    font-weight: 600;
+}
+.main_capiton2{
+    width: 800px; height: 50px;
+    line-height: 210px;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+
+
+/* 네모 바로가기 */
+.nav{
+    width: 336px; height: 540px;
+    position: absolute;
+}
+
+/* 네모들 색상 지정 */
+.nav .n1{color: white; background:rgba(47,85,151,1);}
+.nav .n2{color: #333333; background: rgba(255,192,0,0.7);}
+.nav .n3{color: #333333; background: rgba(0,176,240,0.7);}
+.nav .n4{color: #333333; background: rgba(255,255,255,0.7);}
+.nav .n5{color: RGB(255,192,0);background:rgba(124, 124, 124, 0.7);}
+.nav .n6{color: white; background:rgba(47,85,151,1);}
+
+/* 각 네모들 크기 지정 */
+.nav .n1, .n2,.n3,.n4,.n5,.n6{
+    width: 168px; height: 180px;
+    float: left;
+}
+.nav .n2,.n4,.n6{
+    float: right;
+}
+
+/* 네모 안 텍스트 스타일 */
+.t1,.t2,.t3,.t4,.t5,.t6{
+    padding-inline: 20px;            
+    padding-top: 30px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* 좌측하단 이미지 바로가기 */
+.gallery{
+    width: 900px; height: 300px;
+    background: white;
+    float: left;
+}
+
+/* 문의하기 */
+.contact{
+    width: 500px; height: 300px;
+    background: white;
+    float: left;
+}
+
+/* 푸터 */
+.footer{
+    width: 100%; height: 150px;
+    background: white;
+    clear: both;
+    border-top: 1px solid lightgrey;
+}
