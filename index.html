@@ -90,12 +90,117 @@
 
         <!-- 하단 좌측 사진 바 -->
         <div class="gallery">
-            <div></div>
+            <!-- 슬라이드 쇼 -->
+
+              <div class="slider-container">
+                <div class="slider">
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image10.png" alt="Image 1"></a>
+                    <p class="description">ISO9001</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image5.png" alt="Image 1"></a>
+                    <p class="description">ISO27001</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image6.png" alt="Image 1"></a>
+                    <p class="description">ISO14001</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image9.png" alt="Image 1"></a>
+                    <p class="description">AITF66949</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image14.png" alt="Image 1"></a>
+                    <p class="description">KS</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image15.png" alt="Image 1"></a>
+                    <p class="description">CE인증</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image16.png" alt="Image 1"></a>
+                    <p class="description">ISO22001</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image17.png" alt="Image 1"></a>
+                    <p class="description">이노비즈</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image4.png" alt="Image 1"></a>
+                    <p class="description">ISO45001</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image7.png" alt="Image 1"></a>
+                    <p class="description">ISO13485</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image8.png" alt="Image 1"></a>
+                    <p class="description">ISO22716</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image11.png" alt="Image 1"></a>
+                    <p class="description">연구소</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image13.png" alt="Image 1"></a>
+                    <p class="description">KC</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image12.png" alt="Image 1"></a>
+                    <p class="description">특허</p>
+                  </div>
+                  <div class="slide">
+                    <a href="#"><img src="src/ppt/media/image20.png" alt="Image 1"></a>
+                    <p class="description">메인비즈</p>
+                  </div>
+                  <!-- Add more slide items here -->
+                </div>
+                <button class="prev-btn"><</button>
+                <button class="next-btn">></button>
+              </div>
+              <script src="JS/slide.js"></script>
 
         </div>
 
         <!-- 문의하기 -->
-        <div class="contact"></div>
+        <div class="contact">
+            <form action="#" method="get">
+                <fieldset>
+                <div class="title">문의하기</div>
+        <div class="contact-row">
+            <div class="name-tel">
+                <!-- 이름 -->
+                <div class="name">
+                <input type="text" id="name" maxlength="5" size="20" required placeholder="이름">
+                </div>
+
+                <!-- 연락처 -->
+                <div class="tel">
+                <input type="text"  id="tel" size="20" maxlength="15" placeholder="연락처">
+                </div>
+            </div>
+
+                <!-- 문의내용 -->
+            <div class="detail">
+                <textarea rows="4" id="detail" size="20" required placeholder="문의내용" maxlength="500"></textarea>
+            </div>
+
+                <!-- 제출 -->
+            <div class="submit">
+                <button type="submit">문의하기</button>
+            </div>
+        </div>
+            
+                <!-- 체크박스 -->
+                <div class="check">
+                    <input type="checkbox" id="agree" value="개인정보 동의" required name="agree"checked>
+                    <label for="agree">개인정보취급방침을 동의합니다.</label>
+                    </div>            
+                </fieldset>
+            </form>
+
+        </div>
 
         <!-- 푸터 -->
         <div class="footer"></div>
