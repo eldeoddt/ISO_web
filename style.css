@@ -83,6 +83,7 @@ body {
     margin-left: 110px;
     font-size: 1.05em;
     font-weight: 600;
+    color: #333333;
 }
 /* 내비게이션 li */
 /* 하이퍼링크 기본, 방문했을 때 표시 */
@@ -161,7 +162,7 @@ body {
 
 /* 좌측하단 이미지 바로가기 */
 .gallery{
-    width: 840px; height: 300px;
+    width: 840px; height: 250px;
     background: white;
     float: left;
 }
@@ -236,7 +237,7 @@ body {
 /* 문의하기 스타일 */
 .contact {
     width: 630px;
-    height: 300px;
+    height: 250px;
     background: white;
     float: left;
     padding-top: 40px;
@@ -325,8 +326,55 @@ input{padding-left: 10px;padding-top: 3px;padding-bottom: 3px;}
 
 /* 푸터 */
 .footer{
-    width: 100%; height: 150px;
+    width: 100%; height: 130px;
     background: white;
     clear: both;
     border-top: 1px solid lightgrey;
+}
+/* 푸터 로고 스타일 */
+.footer_logo_contain{
+    width: 28%;
+    height: 130px;
+    float: left;
+}
+.footer_logo{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 42px;
+    /* margin-right: 1px; */
+    margin-left: 140px;
+}
+/* 푸터 로고 옆 이름 */
+.footer_logo_name{
+    width: 180px; height:30px;
+    float: left;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-right: 30px;
+}
+/* 푸터 내비게이션 스타일 */
+.footer_nav{
+    font-size: 0.75em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footer_nav a{
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin: 10px;
+}
+/* 하이퍼링크 기본, 방문했을 때 표시 */
+.footer_a:link,.footer_a:visited{
+    text-decoration: none;
+    color: #7c7c7c;
+}
+/* 푸터 p 스타일 */
+.footer_p span{
+    font-weight: 500;
+    font-size: 0.75em;
+    margin: 2px;
+    color: #7c7c7c;
 }
