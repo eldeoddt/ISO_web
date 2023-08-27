@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISO 인증지원센터</title>
-    <link rel="stylesheet" href="introduce.css">
+    <link rel="stylesheet" href="iso9001.css">
     <style>
+/* 레이아웃의 부모 컨테이너 */
+#container{
+    width: 100%; height: 1870px;
+}
 /* 메인 컨테이너 */
 .section{
     width: 1200px;
-    height: 720px;
+    height: 1300px;
     margin: 30px auto 0;
     display: grid;
     grid-template-columns: 230px 1fr;
@@ -18,18 +22,17 @@
 }
 /* 메인 */
 .main{
-    width: 770px; height: 600px;
+    width: 860px; height: 1300px;
     background: white;
     float: right;
     margin-left: 90px;
 }
-
-/* 본문 , 배경*/
+/* 본문 */
 .main_detail{
     padding: 40px;
     padding-top: 50px;
-    width: 680px; height: 460px;
-    text-align: center;
+    width: 860px; height: 1000px;
+    text-align: left;
     background: whitesmoke;
     border-radius: 20px;
     
@@ -38,24 +41,32 @@
     font-weight: 400;
 
 }
-table{
+.main_detail li{
+    margin: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.main_detail ul{
+    background: #FFF2CC;
+    border-radius: 20px;
     font-size: 0.91em;
-    margin-top: 10px;
-    border-spacing: 0 4px;
+    padding: 10px;
+    align-items: center;
+}
+th{
+    background: #5B9BD5;
 }
 td{
-    background: #DAE3F3;
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    border-right: 2px solid whitesmoke;
-    
+    background: #D2DEEF;
 }
-.td_detail{
-    width: 600px;
-    height: 30px;
-    background: #DAE3F3;
-    line-height: 30px;
+.table1 ul{
+    background: none;
+}
+.table1 th{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
 }
     </style>
     
@@ -67,20 +78,20 @@ td{
 
             <!-- 로고 이미지 -->
             <div class="logoimg">
-                <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="50px"></a>
+                <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="50px"></a>
             </div>
 
             <!--로고 텍스트 -->
-            <div class="name"><a href="index.html"><h1>ISO인증지원센터</h1></a></div>
+            <div class="name"><a href="../index.html"><h1>ISO인증지원센터</h1></a></div>
             <!-- 내비게이션 바 -->
             <div class="navbardiv">
                 <ul class="navbar_ul">
-                    <li><a href="introduce.html">회사소개</a></li>
-                    <li><a href="html_iso/iso9001.html">ISO인증</a></li>
-                    <li><a href="html_company/company.html">기업인증</a></li>
-                    <li><a href="html_product/product.html">제품인증</a></li>
-                    <li><a href="html_support/support.html">경영지원</a></li>
-                    <li><a href="html_consult/consult.html">상담하기</a></li>
+                    <li><a href="../introduce.html">회사소개</a></li>
+                    <li><a href="../html_iso/iso9001.html">ISO인증</a></li>
+                    <li><a href="../html_company/company.html">기업인증</a></li>
+                    <li><a href="../html_product/product.html">제품인증</a></li>
+                    <li><a href="../html_support/support.html">경영지원</a></li>
+                    <li><a href="../html_consult/consult.html">상담하기</a></li>
                 </ul>
             </div>
         </div>
@@ -106,32 +117,48 @@ td{
 
             <!-- 사이드바 -->
             <div class="sidebar">
-                <h3>회사소개</h3>
+                <h3>ISO인증</h3>
                 <ul class="sidebar_list">
-                    <li><a href="introduce.html">센터장인사말</a></li>
-                    <li><a href="introduce2.html">윤리강령</a></li>
-                    <li><a href="introduce3.html">조직도</a></li>
-                    <li><a href="introduce4.html">CERTIFICATE</a></li>
-                    <li><a href="introduce5.html">찾아오는길</a></li>
+                    <!-- 12개 -->
+                    <li><a href="iso9001.html">ISO9001</a></li>
+                    <li><a href="iso14001.html">ISO14001</a></li>
+                    <li><a href="iso45001.html">ISO45001</a></li>
+                    <li><a href="iso27001.html">ISO27001</a></li>
+                    <li><a href="iso27701.html">ISO27701</a></li>
+                    <li><a href="iso13485.html">ISO13485</a></li>
+                    <li><a href="iso22716.html">ISO22716</a></li>
+                    <li><a href="iso37001.html">ISO37001</a></li>
+                    <li><a href="iso37301.html">ISO37301</a></li>
+                    <li><a href="iso50001.html">ISO50001</a></li>
+                    <li><a href="iso22000.html">ISO22000</a></li>
+                    <li><a href="IATF16949.html">IATF16949</a></li>
                 </ul>
             </div>
 
             <!-- 메인 -->
             <div class="main">
-                <div class="main_header"><h2>찾아오는길</h2></div>
+                <div class="main_header"><h2>ISO13485</h2></div>
 
                 <div class="main_detail">
-                    <a href="https://naver.me/GfMmcB34"><img src="src/intro5.png" alt="" width="520px"></a><br><br>
-                    <table>
-                        <tr>
-                            <td>주소</td>
-                            <td class="td_detail">서울시 금천구 가산디지털로5, 2010호(대륭테크노타운20차)</td>                            </td>
-                        </tr>
-                        <tr>
-                            <td>문의</td>
-                            <td class="td_detail">TEL. 0504-480-0157 / 010-4355-0157 / E-mail : hanjongju@hanmail.net</td>                            </td>
-                        </tr>
-                    </table>
+                    <h3>ISO13485 인증제도 개요</h3>
+                    <ul>
+                        <li>ISO13485 규격은 ISO 9001 규격을 기본으로 의료기기에 대하여 특별히 적용되는 사항을 부가하여 만들어진 의료기기를 설계, 개발, 생산, 설치 및 부가서비스를 제공하는 조직의 시스템에 대한 요구사항을 규정한 규격입니다.</li>
+                        <li>의료기기의 안전성이 확보될 수 있는 의료기기 품질경영시스템의 수립은 수출을 진행하는 기업에서는 필수적인 인증입니다.</li>
+                    </ul>
+                    <br><br>
+      
+                    <h3>의료기기 품질경영시스템 구조</h3>
+                        <img src="../src/ppt/media/image27.png" width="650px">
+                        <br><br><br>
+
+                    <h3>필요성 및 인증의 기대효과</h3>
+                    <ul>
+                        <li>의료기기 관련 법적 규제 준수 및 GMP(의료기기 제조 및 품질관리 기준) 인증 대응 가능</li>
+                        <li>의료산업 진출, 해외 수출을 준비하는 기업에게 ISO 13485 인증은 필수 조건</li>
+                        <li>공급자, 외주업체 간의 공급체계에서 공통의 품질시스템적 접근과 일관성 유지</li>
+                        <li>지속적인 품질 개선을 통해 제품의 안전성을 높일 수 있으며 CE 인증 취득에 용이</li>
+                        <li>의료기기의 전 수명주기에 대한 안전 및 품질을 확보하며 고객에게 신뢰성을 보장</li>
+                    </ul>
                 </div>
 
 
@@ -139,8 +166,8 @@ td{
 
         </div>
 
-                <!-- 문의하기 -->
-                <div class="contact">
+                 <!-- 문의하기 -->
+                 <div class="contact">
                     <form action="#" method="get">
                         <fieldset>
                         <div class="title">문의하기</div>
@@ -183,11 +210,11 @@ td{
         <div class="footer">
             <div class="footer_logo_contain">
                 <div class="footer_logo">
-                    <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="45px"></a>
+                    <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="45px"></a>
                 </div>
     
                 <!--로고 텍스트 -->
-                <div class="footer_logo_name"><a href="index.html">ISO인증지원센터</a></div>
+                <div class="footer_logo_name"><a href="../index.html">ISO인증지원센터</a></div>
             </div>
 
             <footer>
