@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
+
+/* 슬라이더 애니메이션 */
+.main {
+  display: flex;
+  width: 200%; /* 이미지가 두 개라서 200%로 설정 */
+  animation: slide-animation 10s infinite linear; /* 10초 간격으로 반복 */
+}
+
+@keyframes slide-animation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 각 슬라이드 아이템 */
+.slide {
+  flex: 0 0 50%;
+  height: 100%;
+}
+
+/* 각 슬라이드 이미지 */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
     </style>
     
 </head>
@@ -37,7 +67,9 @@
 
         <!-- 메인 -->
         <div class="main">
+            <div class="img_src"></div>
             <div class="img_mask"></div>
+
 
             <!-- 네모 바로가기 -->
             <div class="nav">
@@ -95,63 +127,63 @@
               <div class="slider-container">
                 <div class="slider">
                   <div class="slide">
-                    <a href="html_iso/iso9001.html"><img src="src/ppt/media/image10.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image10.png" alt="Image 1"></a>
                     <p class="description">ISO9001</p>
                   </div>
                   <div class="slide">
-                    <a href="#html_iso/iso27001.html"><img src="src/ppt/media/image5.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image5.png" alt="Image 1"></a>
                     <p class="description">ISO27001</p>
                   </div>
                   <div class="slide">
-                    <a href="html_iso/iso14001.html"><img src="src/ppt/media/image6.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image6.png" alt="Image 1"></a>
                     <p class="description">ISO14001</p>
                   </div>
                   <div class="slide">
-                    <a href="html_iso/IATF16949.html"><img src="src/ppt/media/image9.png" alt="Image 1"></a>
-                    <p class="description">IATF66949</p>
+                    <a href="#"><img src="src/ppt/media/image9.png" alt="Image 1"></a>
+                    <p class="description">AITF66949</p>
                   </div>
                   <div class="slide">
-                    <a href="html_product/product.html"><img src="src/ppt/media/image14.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image14.png" alt="Image 1"></a>
                     <p class="description">KS</p>
                   </div>
                   <div class="slide">
-                    <a href="html_product/product3.html"><img src="src/ppt/media/image15.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image15.png" alt="Image 1"></a>
                     <p class="description">CE인증</p>
                   </div>
                   <div class="slide">
-                    <a href="html_iso/iso22000.html"><img src="src/ppt/media/image16.png" alt="Image 1"></a>
-                    <p class="description">ISO22000</p>
+                    <a href="#"><img src="src/ppt/media/image16.png" alt="Image 1"></a>
+                    <p class="description">ISO22001</p>
                   </div>
                   <div class="slide">
-                    <a href="html_company/company.html"><img src="src/ppt/media/image17.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image17.png" alt="Image 1"></a>
                     <p class="description">이노비즈</p>
                   </div>
                   <div class="slide">
-                    <a href="html_iso/iso45001.html"><img src="src/ppt/media/image4.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image4.png" alt="Image 1"></a>
                     <p class="description">ISO45001</p>
                   </div>
                   <div class="slide">
-                    <a href="html_iso/iso13485.html"><img src="src/ppt/media/image7.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image7.png" alt="Image 1"></a>
                     <p class="description">ISO13485</p>
                   </div>
                   <div class="slide">
-                    <a href="html_iso/iso22716.html"><img src="src/ppt/media/image8.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image8.png" alt="Image 1"></a>
                     <p class="description">ISO22716</p>
                   </div>
                   <div class="slide">
-                    <a href="html_company/company3.html"><img src="src/ppt/media/image11.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image11.png" alt="Image 1"></a>
                     <p class="description">연구소</p>
                   </div>
                   <div class="slide">
-                    <a href="html_product/product2.html"><img src="src/ppt/media/image13.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image13.png" alt="Image 1"></a>
                     <p class="description">KC</p>
                   </div>
                   <div class="slide">
-                    <a href="html_support/support.html"><img src="src/ppt/media/image12.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image12.png" alt="Image 1"></a>
                     <p class="description">특허</p>
                   </div>
                   <div class="slide">
-                    <a href="html_company/company2.html"><img src="src/ppt/media/image20.png" alt="Image 1"></a>
+                    <a href="#"><img src="src/ppt/media/image20.png" alt="Image 1"></a>
                     <p class="description">메인비즈</p>
                   </div>
                   <!-- Add more slide items here -->
