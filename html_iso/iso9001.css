@@ -158,9 +158,17 @@ body {
     padding-top: 50px;
     width: 860px; height: 2200px;
     text-align: left;
-    background: whitesmoke;
+    background: rgba(245, 245, 245, 0.4);
     border-radius: 20px;
+    font-weight: 300;
     
+}
+.main_detail ul{
+    background: #ecf3ff;
+    border-radius: 10px;
+    font-size: 0.91em;
+    padding: 10px;
+    align-items: center;
 }
 
 
@@ -199,11 +207,14 @@ body {
     color: #333;
     display: block;
     margin-bottom: 8px;
-    margin-left: 12px;
+    padding-left: 12px;
     color: black;
     font-weight: 300;
 }
-
+.sidebar_list li a:hover{
+    background:  rgb(237, 250, 255);
+    font-weight: 600;
+}
 
 
 /* 인사말 */
@@ -217,7 +228,7 @@ body {
 }
 
 .main_detail p{
-    font-weight: 400;
+    font-weight: 300;
 
 }
 
@@ -230,7 +241,7 @@ body {
     float: right;
     /* padding-top: 30px; */
     color: black;
-    margin-right: 250px;
+    margin-right: 350px;
 }
 /* 이름, 연락처 스타일 */
 #name, #tel {

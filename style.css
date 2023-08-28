@@ -140,8 +140,8 @@ body {
 }
 
 /* 네모들 색상 지정 */
-.nav .n1{color: white; background:rgba(47,85,151,1);}
-.nav .n2{color: #333333; background: rgba(255,192,0,0.7);}
+.nav .n1{color: white; background:rgba(47,85,151,0.9);}
+.nav .n2{color: #333333; background: rgba(255,192,0,0.6);}
 .nav .n3{color: #333333; background: rgba(0,176,240,0.7);}
 .nav .n4{color: #333333; background: rgba(255,255,255,0.7);}
 .nav .n5{color: RGB(255,192,0);background:rgba(124, 124, 124, 0.7);}

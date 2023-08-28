@@ -8,12 +8,12 @@
     <style>
 /* 레이아웃의 부모 컨테이너 */
 #container{
-    width: 100%; height: 2220px;
-}
+    width: 100%; height: 1970px;
+}        
 /* 메인 컨테이너 */
 .section{
     width: 1200px;
-    height: 1650px;
+    height: 1400px;
     margin: 30px auto 0;
     display: grid;
     grid-template-columns: 230px 1fr;
@@ -22,7 +22,7 @@
 }
 /* 메인 */
 .main{
-    width: 860px; height: 1650px;
+    width: 860px; height: 1400px;
     background: white;
     float: right;
     margin-left: 90px;
@@ -31,25 +31,24 @@
 .main_detail{
     padding: 40px;
     padding-top: 50px;
-    width: 860px; height: 1350px;
+    width: 860px; height: 1100px;
     text-align: left;
     border-radius: 20px;
-    
+    font-weight: 300;
 }
+
 
 .main_detail li{
     margin: 20px;
     margin-left: 30px;
     padding-left: 10px;
 }
-.main_detail ul{
-    background: #fff8e3;
-    font-size: 0.91em;
-    padding: 10px;
-    align-items: center;
-}
+
+
 th{
     background: #5B9BD5;
+    height: 25px;
+    line-height: 23px;
 }
 td{
     background: #D2DEEF;
@@ -62,6 +61,11 @@ td{
     color: white;
     font-weight: 500;
     font-size: 0.9em;
+}
+.table_ul li{
+    margin: 15px;
+    margin-left: 30px;
+    padding-left: 10px;
 }
     </style>
     
@@ -121,42 +125,64 @@ td{
                     <li><a href="iso27001.html">ISO27001</a></li>
                     <li><a href="iso27701.html">ISO27701</a></li>
                     <li><a href="iso13485.html">ISO13485</a></li>
-                    <li><a href="iso22716.html" style="background:  rgb(237, 250, 255); font-weight: 600;">ISO22716</a></li>
+                    <li><a href="iso22716.html">ISO22716</a></li>
                     <li><a href="iso37001.html">ISO37001</a></li>
                     <li><a href="iso37301.html">ISO37301</a></li>
                     <li><a href="iso50001.html">ISO50001</a></li>
                     <li><a href="iso22000.html">ISO22000</a></li>
-                    <li><a href="IATF16949.html">IATF16949</a></li>
+                    <li><a href="IATF16949.html" style="background:  rgb(237, 250, 255); font-weight: 600;">IATF16949</a></li>
                 </ul>
             </div>
 
             <!-- 메인 -->
             <div class="main">
-                <div class="main_header"><h2>ISO22716</h2></div>
+                <div class="main_header"><h2>IATF16949</h2></div>
 
                 <div class="main_detail">
-                    <h3>ISO22716 인증제도 개요</h3>
+                    <h3>IATF16949 인증제도 개요</h3>
                     <ul>
-                        <li>ISO22716(2007) Cosmetics - Good Manufacturing Practices(GMP) - Guideline on Good Manufacturing Practices</li>
-                        <li>ISO22716에 규정된 이 가이드라인은 화장품 제품을 위한 GMP(Good Manufacturing Practices) 안내서를 제공하는 목적이 있다. 가이드라인은 화장품 산업에 의해, 제조업의 화장품분야의 특정요구를 고려하여 마련되었다.</li>
-                        <li>ISO22716은 제품의 품질에 영향을 미치는 인적, 기술 및 경영상의 요인들의 관리에 있어서 조직적이고 실질적인 조언을 제공한다. 가이드라인은 각 섹션이 가지는 특정 “원칙”과 함께 원료의 수령에서부터 출하까지 제품의 흐름을 따른다.</li>
-                        <li>GMP는 올바른 과학적 판단과 위험평가에 기초한 공장 내 활동을 통한 품질보증의 실제적인 발전으로 구성된다. ISO22716은 조직이 규정된 특성에 부합하는 제품을 만들 수 있게 하는 활동을 정의한다.</li>
+                        <li>국제IATF (International Automotive Task Force)가 작성한 자동차 관련 품질시스템 요구사항 ( 설계, 개발, 생산, 설치 및 서비스) 으로 유럽과 미국을 통합하는 글로벌 규격으로 탄생한 제도</li>
+                        <li>IATF는 미국의 자동차 Big3사 (다임러 크라이슬러, GM, 포드)와 유럽의 자동차사 (푸조, 르노, 폭스바겐, 피아트, BMW 등) 미국과 유럽의 자동차 협회 등이 참여하여 결성</li>
                     </ul>
                     <br><br>
-      
-                    <h3>품질경영시스템 구조(COSMETICS) 구조</h3>
-                        <img src="../src/ppt/media/image28.png" width="650px">
-                        <br><br><br>
+
+                    <h3>IATF16949 모델</h3>
+                        <img src="../src/iatf.png" width="690px"><br><br><br>
+
 
                     <h3>필요성 및 인증의 기대효과</h3>
-                    <ul>
-                        <li>신뢰할 수 있는 브랜드를 통해 신뢰구축</li>
-                        <li>품질과 순도에 부합하는 제품</li>
-                        <li>GMP 요구사항, 품질, 안전 등의 기준에 부합함</li>
-                        <li>배치의 일관성으로 공정의 재현성/ 안정성 보증</li>
-                        <li>오염과 오류의 위험 최소화</li>
-                        <li>브랜드 & 명성의 보호</li>
-                    </ul>
+                    
+                    <table class="table1">
+                        <tr>
+                            <th>필요성</th>
+                            <th>기대효과</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="table_ul">
+                                    <li>IATF 16949 인증 하나만으로 기존의 QS-9000, VDA6.1, AVSQ 와 같은 인증을 통합할 수 있음</li>
+                                    <li>전 세계 공급업자들은 많은 인증취득 추진으로 인한 시간 및 비용을 최소화하여 고품질의 제품을 제공</li>
+                                    <li>IATF 16949 인증이 기존의 품질경영시스템 인증을 대표함</li>
+                                    <li>장래 어떠한 고객과도 규격으로 인한 마찰을 피할 수 있어 공급업자의 경쟁력을 높일 수 있음</li>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul class="table_ul">
+                                    <li>대내외적인 기업 이미지 및 신뢰성 향상</li>
+                                    <li>경영시스템 체계 확립을 통한 품질향상, 원가절감, 생산성 향상</li>
+                                    <li>기술 개발의 토대 마련</li>
+                                    <li>제품 및 공정 프로세스 개선 기회 마련</li>
+                                    <li>국제 무역에서 신뢰도 확보</li>
+                                    <li>품질개선을 위한 공급자의 자원 재분배 공급자, 외주업체 간의 공통의 품질시스템적 접근과 일관성 유지</li>
+                                    <li>자동차 관련 산업에서 유럽과 미국을 거래하는 기업의 단일심사로 고객 요구사항 충족</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    
+                    
                 </div>
 
 

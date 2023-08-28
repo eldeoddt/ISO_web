@@ -183,9 +183,13 @@ body {
     color: #333;
     display: block;
     margin-bottom: 8px;
-    margin-left: 12px;
+    padding-left: 12px;
     color: black;
     font-weight: 300;
+}
+.sidebar_list li a:hover{
+    background:  rgb(237, 250, 255);
+    font-weight: 600;
 }
 
 /* 메인 */
