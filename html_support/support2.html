@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISO 인증지원센터</title>
-    <link rel="stylesheet" href="introduce.css">
+    <link rel="stylesheet" href="support.css">
     <style>
+/* 레이아웃의 부모 컨테이너 */
+#container{
+    width: 100%; height: 1870px;
+}
 /* 메인 컨테이너 */
 .section{
     width: 1200px;
-    height: 720px;
+    height: 1300px;
     margin: 30px auto 0;
     display: grid;
     grid-template-columns: 230px 1fr;
@@ -18,25 +22,44 @@
 }
 /* 메인 */
 .main{
-    width: 770px; height: 600px;
+    width: 860px; height: 1300px;
     background: white;
     float: right;
     margin-left: 90px;
 }
-
-/* 본문 , 배경*/
+/* 본문 */
 .main_detail{
     padding: 40px;
-    padding-top: 70px;
-    width: 680px; height: 460px;
-    text-align: center;
+    padding-top: 50px;
+    width: 860px; height: 1000px;
+    text-align: left;
     border-radius: 20px;
     
 }
-.main_detail p{
-    font-weight: 400;
 
+.main_detail li{
+    margin: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
 }
+
+th{
+    background: #5B9BD5;
+}
+td{
+    background: #e7f1ff;
+}
+.table1 ul{
+    background: none;
+}
+.table1 th{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+
     </style>
     
 </head>
@@ -47,20 +70,20 @@
 
             <!-- 로고 이미지 -->
             <div class="logoimg">
-                <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="50px"></a>
+                <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="50px"></a>
             </div>
 
             <!--로고 텍스트 -->
-            <div class="name"><a href="index.html"><h1>ISO인증지원센터</h1></a></div>
+            <div class="name"><a href="../index.html"><h1>ISO인증지원센터</h1></a></div>
             <!-- 내비게이션 바 -->
             <div class="navbardiv">
                 <ul class="navbar_ul">
-                    <li><a href="introduce.html">회사소개</a></li>
-                    <li><a href="html_iso/iso9001.html">ISO인증</a></li>
-                    <li><a href="html_company/company.html">기업인증</a></li>
-                    <li><a href="html_product/product.html">제품인증</a></li>
-                    <li><a href="html_support/support.html">경영지원</a></li>
-                    <li><a href="html_consult/consult.html">상담하기</a></li>
+                    <li><a href="../introduce.html">회사소개</a></li>
+                    <li><a href="../html_iso/iso9001.html">ISO인증</a></li>
+                    <li><a href="../html_company/company.html">기업인증</a></li>
+                    <li><a href="../html_product/product.html">제품인증</a></li>
+                    <li><a href="../html_support/support.html">경영지원</a></li>
+                    <li><a href="../html_consult/consult.html">상담하기</a></li>
                 </ul>
             </div>
         </div>
@@ -86,21 +109,50 @@
 
             <!-- 사이드바 -->
             <div class="sidebar">
-                <h3>회사소개</h3>
+                <h3>경영지원</h3>
                 <ul class="sidebar_list">
-                    <li><a href="introduce.html">센터장인사말</a></li>
-                    <li><a href="introduce2.html">윤리강령</a></li>
-                    <li><a href="introduce3.html" style="background:  rgb(237, 250, 255); font-weight: 600;">조직도</a></li>
-                    <li><a href="introduce5.html">찾아오는길</a></li>
+                    <li><a href="support.html">특허경영</a></li>
+                    <li><a href="support2.html" style="background:  rgb(237, 250, 255); font-weight: 600;">재무개선</a></li>
                 </ul>
             </div>
 
             <!-- 메인 -->
             <div class="main">
-                <div class="main_header"><h2>조직도</h2></div>
+                <div class="main_header"><h1>재무개선</h1></div>
 
                 <div class="main_detail">
-                    <img src="src/intro3.png" alt="" width="600px">
+                    <h3>매출액상승 외 기업의 수익률 상승시키는 방법</h3>
+                    <ul>
+                        <li>융복합 산업화, 세계화의 가속화, 기업 간 경쟁까지 치열해지다 보니, 매출을 통해서 기업의 이익률을 개선하기가 어려운 상황임.</li>
+                        <li>경영자들이 조금만 관심을 기울이신다면, 다양한 경영기법과 의사결정을 통해 기업의 재무제표를 좀 더 좋게 개선할 수 있음.</li>
+                        <li>조세특례제한법이나 지방세특례제한법에서 중소기업들에게 제공하는 다양한 혜택들을 찾는다면, 매출 없이도 수익성 개선을 이룰수 있음.</li>
+                    </ul>
+                        <br><br>
+
+                    <h3>재무개선</h3>
+                    <ul>
+                        <li>기업경영 부문 : 예산계획, 예산집행, 예산관리, 목표관리, 경영 의사결정의 합리화 지원</li>
+                        <li>기업신용 부문 : 신용도 제고, 자금조달 방안 수립, 금리우대 혜택</li>
+                        <li>기타 부문 : 입찰가능성 제고, 회사 신인도 향상, 경영 활동상 애로사항/ 당면 문제점 / 문제점의 발견과 혁신을 통한 기업의 발전</li>
+                    </ul>
+                    <br><br>
+      
+                    <h3>재무개선 활용</h3>
+                    <ul>
+                        <li>세무 리스크 감소</li>
+                        <li>조세특례제한법과 지방세특례제한법을 활용한 절세</li>
+                        <li>가지급금 처리 : 가지급금을 처리하기 위한 합법적인 다양한 전략 컨설팅</li>
+                        <li>조세지원제도 활용 : 창업 및 기업 지원, 경영안정 지원, 투자촉진 지원, 연구인력개발 지원, 재무 구조 개선 지원, 구조조정 지원</li>
+                    </ul>
+                        <br><br>
+
+                    <h3>재무개선 효과</h3>
+                    <ul>
+                        <li>재무안정성향상 : 경기변동에 대한 장기적인 대응능력, 자금의 조달과 운용 사이의 균형관계, 채무 상환능력, 원리금 상환 능력</li>
+                        <li>수익성향상 : 이익의 창출 능력, 투자자본에 대한 경영 성과의 정도</li>
+                        <li>활동성향상 : 특정자산 이용의 효율성, 특정자산이 현금화되는 속도</li>
+                    </ul>
+                        <br><br>                        
                 </div>
 
 
@@ -108,8 +160,8 @@
 
         </div>
 
-                <!-- 문의하기 -->
-                <div class="contact">
+                 <!-- 문의하기 -->
+                 <div class="contact">
                     <form action="#" method="get">
                         <fieldset>
                         <div class="title">문의하기</div>
@@ -152,11 +204,11 @@
         <div class="footer">
             <div class="footer_logo_contain">
                 <div class="footer_logo">
-                    <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="45px"></a>
+                    <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="45px"></a>
                 </div>
     
                 <!--로고 텍스트 -->
-                <div class="footer_logo_name"><a href="index.html">ISO인증지원센터</a></div>
+                <div class="footer_logo_name"><a href="../index.html">ISO인증지원센터</a></div>
             </div>
 
             <footer>

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISO 인증지원센터</title>
-    <link rel="stylesheet" href="introduce.css">
+    <link rel="stylesheet" href="product.css">
     <style>
+/* 레이아웃의 부모 컨테이너 */
+#container{
+    width: 100%; height: 1770px;
+}
 /* 메인 컨테이너 */
 .section{
     width: 1200px;
-    height: 720px;
+    height: 1200px;
     margin: 30px auto 0;
     display: grid;
     grid-template-columns: 230px 1fr;
@@ -18,25 +22,44 @@
 }
 /* 메인 */
 .main{
-    width: 770px; height: 600px;
+    width: 860px; height: 1200px;
     background: white;
     float: right;
     margin-left: 90px;
 }
-
-/* 본문 , 배경*/
+/* 본문 */
 .main_detail{
     padding: 40px;
-    padding-top: 70px;
-    width: 680px; height: 460px;
-    text-align: center;
+    padding-top: 50px;
+    width: 860px; height: 900px;
+    text-align: left;
     border-radius: 20px;
     
 }
-.main_detail p{
-    font-weight: 400;
 
+.main_detail li{
+    margin: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
 }
+
+th{
+    background: #5B9BD5;
+}
+td{
+    background: #e7f1ff;
+}
+.table1 ul{
+    background: none;
+}
+.table1 th{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+
     </style>
     
 </head>
@@ -47,20 +70,20 @@
 
             <!-- 로고 이미지 -->
             <div class="logoimg">
-                <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="50px"></a>
+                <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="50px"></a>
             </div>
 
             <!--로고 텍스트 -->
-            <div class="name"><a href="index.html"><h1>ISO인증지원센터</h1></a></div>
+            <div class="name"><a href="../index.html"><h1>ISO인증지원센터</h1></a></div>
             <!-- 내비게이션 바 -->
             <div class="navbardiv">
                 <ul class="navbar_ul">
-                    <li><a href="introduce.html">회사소개</a></li>
-                    <li><a href="html_iso/iso9001.html">ISO인증</a></li>
-                    <li><a href="html_company/company.html">기업인증</a></li>
-                    <li><a href="html_product/product.html">제품인증</a></li>
-                    <li><a href="html_support/support.html">경영지원</a></li>
-                    <li><a href="html_consult/consult.html">상담하기</a></li>
+                    <li><a href="../introduce.html">회사소개</a></li>
+                    <li><a href="../html_iso/iso9001.html">ISO인증</a></li>
+                    <li><a href="../html_company/company.html">기업인증</a></li>
+                    <li><a href="../html_product/product.html">제품인증</a></li>
+                    <li><a href="../html_support/support.html">경영지원</a></li>
+                    <li><a href="../html_consult/consult.html">상담하기</a></li>
                 </ul>
             </div>
         </div>
@@ -86,21 +109,39 @@
 
             <!-- 사이드바 -->
             <div class="sidebar">
-                <h3>회사소개</h3>
+                <h3>제품인증</h3>
                 <ul class="sidebar_list">
-                    <li><a href="introduce.html">센터장인사말</a></li>
-                    <li><a href="introduce2.html">윤리강령</a></li>
-                    <li><a href="introduce3.html" style="background:  rgb(237, 250, 255); font-weight: 600;">조직도</a></li>
-                    <li><a href="introduce5.html">찾아오는길</a></li>
+                    <li><a href="product.html" >KS인증</a></li>
+                    <li><a href="product2.html" style="background:  rgb(237, 250, 255); font-weight: 600;">KC인증</a></li>
+                    <li><a href="product3.html">CE인증</a></li>
                 </ul>
             </div>
 
             <!-- 메인 -->
             <div class="main">
-                <div class="main_header"><h2>조직도</h2></div>
+                <div class="main_header"><h1>KC인증</h1></div>
 
                 <div class="main_detail">
-                    <img src="src/intro3.png" alt="" width="600px">
+                    <h3>KC인증 개요</h3>
+                    <ul>
+                        <li>전기용품안전인증[KC인증]이란 해외 수입 또는 국내 제조한 전기제품들이 국내 유통판매​되어 소비자가 사용함에 있어 화재, 감전 등 안전사고 방지를 위하여 안전인증기관으로부터 인증받은 제품만 유통판매하도록한 대한민국 강제 인증제도 입니다.</li>
+                        <li>즉, 인증대상 제품이 인증을 받지 않는 경우 국내 판매가 불가합니다.</li>
+                        <li>마찬가지로 해외제품을 수입하는 경우 인증서가 없으면 통관되지 않습니다.</li>
+                    </ul>
+                    <br><br>
+      
+                    <h3>KC인증 절차</h3>
+                    <img src="../src/ppt/media/image33.png" width="810px">
+                    <br><br><br>
+
+                    <h3>혜택</h3>
+                    <ul>
+                        <li>중복된 인증마크 사용으로 인한 혼선을 해결한다.</li>
+                        <li>ONE-STOP인증시스템 구축으로 종복 인증에 따른 기업의 경제적 부담 절감과 인증 소요기간이 단축된다.</li>
+                        <li>규격 제.개정 비용, 물품 및 용역 부문의 낭비 요인을 차단하여 예산이 절감된다.</li>
+                        <li>국제표준화 기준에 맞추어 기술무역장벽에 효과적인 대응이 가능합니다.</li>
+                    </ul>
+                        <br><br><br>
                 </div>
 
 
@@ -108,8 +149,8 @@
 
         </div>
 
-                <!-- 문의하기 -->
-                <div class="contact">
+                 <!-- 문의하기 -->
+                 <div class="contact">
                     <form action="#" method="get">
                         <fieldset>
                         <div class="title">문의하기</div>
@@ -152,11 +193,11 @@
         <div class="footer">
             <div class="footer_logo_contain">
                 <div class="footer_logo">
-                    <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="45px"></a>
+                    <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="45px"></a>
                 </div>
     
                 <!--로고 텍스트 -->
-                <div class="footer_logo_name"><a href="index.html">ISO인증지원센터</a></div>
+                <div class="footer_logo_name"><a href="../index.html">ISO인증지원센터</a></div>
             </div>
 
             <footer>

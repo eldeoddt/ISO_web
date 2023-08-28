@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISO 인증지원센터</title>
-    <link rel="stylesheet" href="introduce.css">
+    <link rel="stylesheet" href="product.css">
     <style>
+/* 레이아웃의 부모 컨테이너 */
+#container{
+    width: 100%; height: 1870px;
+}
 /* 메인 컨테이너 */
 .section{
     width: 1200px;
-    height: 720px;
+    height: 1300px;
     margin: 30px auto 0;
     display: grid;
     grid-template-columns: 230px 1fr;
@@ -18,25 +22,44 @@
 }
 /* 메인 */
 .main{
-    width: 770px; height: 600px;
+    width: 860px; height: 1300px;
     background: white;
     float: right;
     margin-left: 90px;
 }
-
-/* 본문 , 배경*/
+/* 본문 */
 .main_detail{
     padding: 40px;
-    padding-top: 70px;
-    width: 680px; height: 460px;
-    text-align: center;
+    padding-top: 50px;
+    width: 860px; height: 1000px;
+    text-align: left;
     border-radius: 20px;
     
 }
-.main_detail p{
-    font-weight: 400;
 
+.main_detail li{
+    margin: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
 }
+
+th{
+    background: #5B9BD5;
+}
+td{
+    background: #e7f1ff;
+}
+.table1 ul{
+    background: none;
+}
+.table1 th{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+
     </style>
     
 </head>
@@ -47,20 +70,20 @@
 
             <!-- 로고 이미지 -->
             <div class="logoimg">
-                <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="50px"></a>
+                <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="50px"></a>
             </div>
 
             <!--로고 텍스트 -->
-            <div class="name"><a href="index.html"><h1>ISO인증지원센터</h1></a></div>
+            <div class="name"><a href="../index.html"><h1>ISO인증지원센터</h1></a></div>
             <!-- 내비게이션 바 -->
             <div class="navbardiv">
                 <ul class="navbar_ul">
-                    <li><a href="introduce.html">회사소개</a></li>
-                    <li><a href="html_iso/iso9001.html">ISO인증</a></li>
-                    <li><a href="html_company/company.html">기업인증</a></li>
-                    <li><a href="html_product/product.html">제품인증</a></li>
-                    <li><a href="html_support/support.html">경영지원</a></li>
-                    <li><a href="html_consult/consult.html">상담하기</a></li>
+                    <li><a href="../introduce.html">회사소개</a></li>
+                    <li><a href="../html_iso/iso9001.html">ISO인증</a></li>
+                    <li><a href="../html_company/company.html">기업인증</a></li>
+                    <li><a href="../html_product/product.html">제품인증</a></li>
+                    <li><a href="../html_support/support.html">경영지원</a></li>
+                    <li><a href="../html_consult/consult.html">상담하기</a></li>
                 </ul>
             </div>
         </div>
@@ -86,21 +109,33 @@
 
             <!-- 사이드바 -->
             <div class="sidebar">
-                <h3>회사소개</h3>
+                <h3>제품인증</h3>
                 <ul class="sidebar_list">
-                    <li><a href="introduce.html">센터장인사말</a></li>
-                    <li><a href="introduce2.html">윤리강령</a></li>
-                    <li><a href="introduce3.html" style="background:  rgb(237, 250, 255); font-weight: 600;">조직도</a></li>
-                    <li><a href="introduce5.html">찾아오는길</a></li>
+                    <li><a href="product.html" >KS인증</a></li>
+                    <li><a href="product2.html" >KC인증</a></li>
+                    <li><a href="product3.html"style="background:  rgb(237, 250, 255); font-weight: 600;">CE인증</a></li>
                 </ul>
             </div>
 
             <!-- 메인 -->
             <div class="main">
-                <div class="main_header"><h2>조직도</h2></div>
+                <div class="main_header"><h1>CE인증</h1></div>
 
                 <div class="main_detail">
-                    <img src="src/intro3.png" alt="" width="600px">
+                    <h3>CE인증 개요</h3>
+                    <p>CE는 불어로 Conformité Européene의 머릿 글자이며 유럽공동체(유럽연합)을 의미한다.</p>
+                    <p>CE마크는 제품이 안전, 건강, 환경 및 소비자 보호와 관련된 유럽규격 즉, EU이사회지침(Directive)의 요구사항을 <br>모두 만족한다는 의미이며, 유럽연합 내에서 유통되는 소비자 안전과 관련된 제품에는 반드시 승인을 받고 <br>CE-마크를 부착하여야 한다.</p>
+                    <br><br>
+                    <ul>
+                        <li>유럽연합의 통합규격 인증 마크, 강제규격</li>
+                        <li>주요대상품목 :  완구류/가스기기류/기계류 / 전자파 적합성 / 통신 단말기 / 비자동저울 / 개인보호장비 등 주관소</li>
+                        <li>소요기간 약 4주</li>
+                    </ul>
+                    <br><br>
+      
+                    <h3>CE인증 절차</h3>
+                    <img src="../src/ppt/media/image34.png" width="550px">
+                        <br><br><br>
                 </div>
 
 
@@ -108,8 +143,8 @@
 
         </div>
 
-                <!-- 문의하기 -->
-                <div class="contact">
+                 <!-- 문의하기 -->
+                 <div class="contact">
                     <form action="#" method="get">
                         <fieldset>
                         <div class="title">문의하기</div>
@@ -152,11 +187,11 @@
         <div class="footer">
             <div class="footer_logo_contain">
                 <div class="footer_logo">
-                    <a href="index.html"><img src="src/ppt/media/image19.png" alt="" width="45px"></a>
+                    <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="45px"></a>
                 </div>
     
                 <!--로고 텍스트 -->
-                <div class="footer_logo_name"><a href="index.html">ISO인증지원센터</a></div>
+                <div class="footer_logo_name"><a href="../index.html">ISO인증지원센터</a></div>
             </div>
 
             <footer>
