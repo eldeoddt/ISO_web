@@ -25,77 +25,77 @@
     font-weight: 600;
     margin-top: 70px;
     margin-bottom: 30px;
-    margin-left: 200px;
-    border: 2px solid red;
+    margin-left: 250px;
+    /* border: 2px solid red; */
 }
 /* 본문 컨테이너*/
 .main_detail{
     width: 1100px; height: 1280px;
     font-weight: 300;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding-left: 40px;
     margin: 0 auto;
+    margin-right: 70px;
+    margin-top: 50px;
     /* margin-left: 200px; */
     align-items: center;
 }
 
 
 /* 이름, 연락처 스타일 */
-#detail, #name, #tel {
-    border: 1px solid #cbcbcb;
+#name, #tel {
+    border: 1px solid #dedede;
+    width: 160px;
+    height: 22px;
+}
+#detail{
+    border: 1px solid #dedede;
 }
 table{
     color: #595959;
     border-collapse: collapse;
-    height: 120px;
+    height: 355px;
     width: 1000px;
-    border: 1px solid blue;
+    font-size: 0.93em;
 }
+th{background-color: #f8f8f8;}
+
 .th_name{
     width: 250px;
-    height: 40px;
-    border: 1px solid rgb(202, 202, 202);
+    height: 45px;
     vertical-align: middle;
     text-align: center;
+    border-bottom:0.5px solid #d1d1d1;
+    border-top:0.5px solid #d1d1d1;
+    
 }
 .th_detail{
     width: 250px;
     height: 100px;
-    border: 1px solid black;
     vertical-align: middle;
     text-align: center;
+    border-bottom:0.5px solid #d1d1d1;
+    border-top:0.5px solid #d1d1d1;
 }
 .td_name{
     width: 750;
-    height: 30px;
-    border: 1px solid black;
+    height: 45px;
     vertical-align: middle;
-    padding-left: 10px;
+    padding-left: 9px;
+    border-bottom:0.5px solid #d1d1d1;
+    border-top:0.5px solid #d1d1d1;
 }
 .td_detail{
     width: 750;
-    height: 100px;
-    border: 1px solid black;
+    height: 220px;
     vertical-align: middle;
-    padding-left: 10px;
-}
-/* th{
-    background: rgb(238, 238, 238);
+    padding-left: 9px;
     border-bottom:0.5px solid #d1d1d1;
     border-top:0.5px solid #d1d1d1;
-    font-weight: 500;
-    width: 250px;
-    height: 30px;
 }
-td{
-    border-bottom:0.5px solid #d1d1d1;
-    border-top:0.5px solid #d1d1d1;
-    width: 500px;
-    height: 30px !important;
 
-} */
 textarea{
-    width: 800px;
+    width: 730px;
     height: 200px;
 }
 ul{
@@ -161,9 +161,9 @@ ul{
 
                                     <tr>
                                         <th class="th_name">이름</th>
-                                        <td>
+                                        <td class="td_name">
                                             <!-- 이름 -->
-                                            <div class="name">
+                                            <div class="form_name">
                                             <input type="text" id="name" maxlength="5" size="20" required >
                                             </div>
                                         </td>
@@ -197,7 +197,7 @@ ul{
                                     </tr>
                                 </table>
                                 </li>
-
+                                <br><br>
                                 <li>
                                 <h3>개인정보 취급방침</h3>
 
