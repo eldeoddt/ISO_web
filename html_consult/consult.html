@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO 인증지원센터</title>
+    <link rel="stylesheet" href="consult.css">
+    <style>
+/* 레이아웃의 부모 컨테이너 */
+#container{
+    width: 100%; height: 1700px;
+}
+
+/* 메인 컨테이너 */
+.section{
+    width: 1440px;
+    height: 1300px;
+    border: 2px pink;
+    justify-content: space-between;
+}
+/* 제목 */
+.main_header{
+    width: 200px; height: 40px;
+    font-size: 1.9em;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    border: 2px solid red;
+}
+/* 본문 컨테이너*/
+.main_detail{
+    width: 1100px; height: 1280px;
+    font-weight: 300;
+    border: 2px solid blue;
+    padding-left: 40px;
+    margin: 0 auto;
+    /* margin-left: 200px; */
+    align-items: center;
+}
+
+
+/* 이름, 연락처 스타일 */
+#detail, #name, #tel {
+    border: 1px solid #cbcbcb;
+}
+table{
+    color: #595959;
+    border-collapse: collapse;
+    height: 120px;
+    width: 1000px;
+    border: 1px solid blue;
+}
+.th_name{
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    vertical-align: middle;
+    text-align: center;
+}
+.th_detail{
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    vertical-align: middle;
+    text-align: center;
+}
+.td_name{
+    width: 750;
+    height: 30px;
+    border: 1px solid black;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.td_detail{
+    width: 750;
+    height: 100px;
+    border: 1px solid black;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+/* th{
+    background: rgb(238, 238, 238);
+    border-bottom:0.5px solid #d1d1d1;
+    border-top:0.5px solid #d1d1d1;
+    font-weight: 500;
+    width: 250px;
+    height: 30px;
+}
+td{
+    border-bottom:0.5px solid #d1d1d1;
+    border-top:0.5px solid #d1d1d1;
+    width: 500px;
+    height: 30px !important;
+
+} */
+textarea{
+    width: 800px;
+    height: 200px;
+}
+ul{
+    list-style: square;
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+        <!-- 헤더 -->
+        <div class="header">
+
+            <!-- 로고 이미지 -->
+            <div class="logoimg">
+                <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="50px"></a>
+            </div>
+
+            <!--로고 텍스트 -->
+            <div class="name"><a href="../index.html"><h1>ISO인증지원센터</h1></a></div>
+            <!-- 내비게이션 바 -->
+            <div class="navbardiv">
+                <ul class="navbar_ul">
+                    <li><a href="../introduce.html">회사소개</a></li>
+                    <li><a href="../html_iso/iso9001.html">ISO인증</a></li>
+                    <li><a href="../html_company/company.html">기업인증</a></li>
+                    <li><a href="../html_product/product.html">제품인증</a></li>
+                    <li><a href="../html_support/support.html">경영지원</a></li>
+                    <li><a href="../html_consult/consult.html">상담하기</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 이미지 -->
+        <div class="img">
+            <div class="img_mask"></div>
+
+            <!-- 문구 레이아웃 -->
+            <div class="caption">
+                <!-- 메인 문구 We will do our best for Business Partner 기업발전을 위해 최선을 다하겠습니다. -->
+                <div class="main_capiton1">
+                    ISO인증지원센터
+                </div>
+                <div class="main_capiton2">
+                    기업발전을 위해 최선을 다하겠습니다. 
+                </div>
+            </div>
+        </div>
+        
+        <!-- 메인컨테이너 -->
+        <div class="section">
+                <div class="main_header"><h1>상담하기</h1></div>
+
+                <div class="main_detail">
+                    <!-- 폼 -->
+                    <form action="#" method="get">                        
+                        <ul>
+                            <li>
+                                <h3>기본정보</h3>
+                                <table>
+
+                                    <tr>
+                                        <th class="th_name">이름</th>
+                                        <td>
+                                            <!-- 이름 -->
+                                            <div class="name">
+                                            <input type="text" id="name" maxlength="5" size="20" required >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="th_name">연락처</th>
+                                        <td class="td_name">
+                                            <!-- 연락처 -->
+                                            <div class="tel">
+                                            <input type="text"  id="tel" size="20" maxlength="20" required >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="th_name">이메일</th>
+                                        <td class="td_name">
+                                            <!-- 이메일 -->
+                                            <div class="mail">
+                                            <input type="email" id="name" maxlength="30" size="20" required >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="th_detail">문의내용</th>
+                                        <td class="td_detail">
+                                            <!-- 문의내용 -->
+                                            <div class="detail">
+                                            <textarea rows="4" id="detail" size="20" required maxlength="500"></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                </li>
+
+                                <li>
+                                <h3>개인정보 취급방침</h3>
+
+                            <!-- 체크박스 -->
+                            <div class="check">
+                            <input type="checkbox" id="agree" value="개인정보 동의" required name="agree"checked>
+                            <label for="agree">개인정보취급방침을 동의합니다.</label>
+                            </div>    
+                                </li>
+                            </ul>
+
+                            <!-- 제출 -->
+                            <div class="submit">
+                                <button type="submit">문의하기</button>
+                            </div>                            
+                    </form>
+                </div>
+        </div>
+
+                 <!-- 문의하기 -->
+
+
+        
+
+        
+
+                    
+        
+                    
+        
+                </div>
+
+
+        <!-- 푸터 -->
+        <div class="footer">
+            <div class="footer_logo_contain">
+                <div class="footer_logo">
+                    <a href="../index.html"><img src="../src/ppt/media/image19.png" alt="" width="45px"></a>
+                </div>
+    
+                <!--로고 텍스트 -->
+                <div class="footer_logo_name"><a href="../index.html">ISO인증지원센터</a></div>
+            </div>
+
+            <footer>
+                <nav class="footer_nav">
+                    <a href="introduce.html" class="footer_a">회사소개</a> |
+                    <a href="html_iso/iso9001.html" class="footer_a">ISO인증</a> |
+                    <a href="html_company/company.html" class="footer_a">기업인증</a> |
+                    <a href="html_product/product.html" class="footer_a">제품인증</a> |
+                    <a href="html_support/support.html" class="footer_a">경영지원</a> |
+                    <a href="html_consult/consult.html" class="footer_a">상담하기</a>
+                </nav>
+                <p class="footer_p">
+                    <span>상호 : 더가치중소기업지원센터</span>
+                    <span>주소 : 서울시 금천구 가산디지털로5, 2010호 (대륭테크노타운 20차)</span><br>
+                    <span>사업자 등록번호 : 730-06-00331</span>
+                    <span>TEL. 070-7696-9757 / 010-4355-0157</span>
+                    <span>FAX. 0504-480-0157</span>
+                    <span>EMAIL. hanjongju@hanmail.net</span>
+                </p>
+            </footer>
+
+        </div>
+
+    </div>
+</body>
+</html>

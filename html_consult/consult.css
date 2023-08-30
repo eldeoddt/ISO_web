@@ -1,0 +1,238 @@
+@font-face {font-family:'Pretendard';
+    src:local('font/static/woff2/Pretendard-Regular.woff2'),
+    url('Pretendard-Regular.woff2') format('woff2'); }
+    @font-face {font-family:'PretendardSemiBold';
+    src:local('font/static/woff2/Pretendard-SemiBold.woff2'),
+    url('Pretendard-SemiBold.woff2') format('woff2'); }
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+/* Reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,th,td
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr,  td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 폰트 설정 */
+* {font-family: Pretendard,'Noto Sans KR', sans-serif;}
+
+/* CSS 설정 */
+body {
+    margin: 0; /* body의 마진 제거 */
+    padding: 0; /* body의 패딩 제거 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+}
+
+
+/* 레이아웃의 부모 컨테이너 */
+#container{
+    width: 100%; height: 3070px;
+}
+
+/* 헤더 */
+.header{
+    width: 100%; height: 90px;
+    background: white;
+    /* float: top; */
+}
+/* 로고 */
+.logoimg{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 22px;
+    margin-right: 1px;
+    margin-left: 200px;
+}
+/* 로고 옆 이름 */
+.name{
+    width: 180px; height:30px;
+    float: left;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.35em;
+
+}
+.name a:visited, .name a:link{
+    text-decoration: none;
+    color: black;
+}
+
+/* 내비게이션바 */
+.navbardiv{
+    float: left;
+}
+/* 내비게이션 ul */
+.navbar_ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    height: 90px;
+    width: 800px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 110px;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #333333;
+}
+/* 내비게이션 li */
+/* 하이퍼링크 기본, 방문했을 때 표시 */
+.navbar_ul li a:link, .navbar_ul li a:visited{
+    margin: 31px;
+    text-decoration: none;
+    color: #333333;
+}
+
+/* img */
+.img{
+    width: 100%; height: 130px;
+    position: relative;
+    background: url('src/ppt/media/image3.png');
+    background-size:cover;
+}
+/* 이미지 마스크 */
+.img_mask{
+    width: 100%; height: 130px;
+    position: absolute;
+    background: rgba(0,0,0, 0.3);
+}
+/* 메인 문구 레이아웃*/
+.caption{
+    width: 1050px;
+    height: 130px;
+    position: relative;
+    float: right;
+    color: white;
+    text-shadow:1px 1px 2px #7c7c7c;
+}
+.main_capiton1{
+    width: 900px; height: 50px;
+    line-height: 110px;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-left: 400px;
+}
+.main_capiton2{
+    width: 800px; height: 50px;
+    line-height: 90px;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* 문의하기 스타일 */
+
+
+
+/* 제출 버튼 스타일 */
+.submit button {
+    width: 100px; /* 버튼의 너비 조절 */
+    height: 82px;
+    background-color: #ffd802;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+/* 체크박스 스타일 */
+.check{
+    font-size:13px;
+    margin-top: 3px;
+
+}
+
+
+#agree{
+    accent-color: #767676;
+}
+
+
+
+
+/* 푸터 */
+.footer{
+    width: 100%; height: 130px;
+    background: white;
+    clear: both;
+    border-top: 1px solid lightgrey;
+}
+/* 푸터 로고 스타일 */
+.footer_logo_contain{
+    width: 28%;
+    height: 130px;
+    float: left;
+}
+.footer_logo{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 42px;
+    /* margin-right: 1px; */
+    margin-left: 140px;
+}
+/* 푸터 로고 옆 이름 */
+.footer_logo_name{
+    width: 180px; height:30px;
+    float: left;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.footer_logo_name a:visited, .footer_logo_name a:link{
+    text-decoration: none;
+    color: black;
+}
+/* 푸터 내비게이션 스타일 */
+.footer_nav{
+    font-size: 0.75em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footer_nav a{
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin: 10px;
+}
+/* 하이퍼링크 기본, 방문했을 때 표시 */
+.footer_a:link,.footer_a:visited{
+    text-decoration: none;
+    color: #7c7c7c;
+}
+/* 푸터 p 스타일 */
+.footer_p span{
+    font-weight: 500;
+    font-size: 0.75em;
+    margin: 2px;
+    color: #7c7c7c;
+}
