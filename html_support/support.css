@@ -102,14 +102,14 @@ body {
 .img{
     width: 100%; height: 130px;
     position: relative;
-    background: url('src/ppt/media/image3.png');
+    background: url('../src/ppt/media/image3.png');
     background-size:cover;
 }
 /* 이미지 마스크 */
 .img_mask{
     width: 100%; height: 130px;
     position: absolute;
-    background: rgba(0,0,0, 0.3);
+    background: rgba(0,0,0, 0.45);
 }
 /* 메인 문구 레이아웃*/
 .caption{
