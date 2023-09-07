@@ -1,9 +1,9 @@
-const slider = document.querySelector('.slider_m');
-const slides = document.querySelectorAll('.slider_m .slide_m');
+const mslider = document.querySelector('.slider_m');
+const mslides = document.querySelectorAll('.slider_m .slide_m');
 let index = 0;
 
 function showSlide(currentIndex) {
-  slides.forEach((slide, i) => {
+  mslides.forEach((slide, i) => {
     if (i === currentIndex) {
       slide.style.opacity = 1;
     } else {
@@ -13,7 +13,7 @@ function showSlide(currentIndex) {
 }
 
 function nextSlide() {
-  index = (index + 1) % slides.length;
+  index = (index + 1) % mslides.length;
   showSlide(index);
 }
 

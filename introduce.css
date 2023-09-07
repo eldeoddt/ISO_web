@@ -34,13 +34,14 @@ time, mark, audio, video {
 body {
     margin: 0; /* body의 마진 제거 */
     padding: 0; /* body의 패딩 제거 */
-    overflow-x: hidden; /* 가로 스크롤 제거 */
 }
 
 
 /* 레이아웃의 부모 컨테이너 */
 #container{
-    width: 100%; height: 100vh;
+    width: 100%; height: 1350px;
+    min-width: 1440px;
+    overflow: hidden;
 }
 
 /* 헤더 */
@@ -101,6 +102,7 @@ body {
 /* img */
 .img{
     width: 100%; height: 130px;
+    min-width: 1440px;
     position: relative;
     background: url('src/ppt/media/image3.png');
     background-size:cover;
@@ -108,6 +110,7 @@ body {
 /* 이미지 마스크 */
 .img_mask{
     width: 100%; height: 130px;
+    min-width: 1440px;
     position: absolute;
     background: rgba(0,0,0, 0.45);
 }
@@ -138,7 +141,7 @@ body {
 /* 메인 컨테이너 */
 .section{
     width: 1200px;
-    height: 600px;
+    height: 670px;
     margin: 30px auto 0;
     display: grid;
     grid-template-columns: 230px 1fr;
@@ -228,7 +231,8 @@ body {
 /* 문의하기 스타일 */
 .contact {
     width: 630px;
-    height: 220px;
+    min-width: 630px;
+    height: 290px;
     background: white;
     float: right;
     /* padding-top: 30px; */
@@ -252,6 +256,8 @@ body {
     font-size: 18px;
     color: #333333;
     margin-top: 7px;
+    width: 600px;
+    height: fit-content;
 }
 
 /* 수직으로 정렬할 컨테이너 */
@@ -319,9 +325,11 @@ input{padding-left: 10px;padding-top: 3px;padding-bottom: 3px;}
 /* 푸터 */
 .footer{
     width: 100%; height: 130px;
+    min-width: 1440px;
     background: white;
     clear: both;
     border-top: 1px solid lightgrey;
+    text-decoration: none;
 }
 /* 푸터 로고 스타일 */
 .footer_logo_contain{
@@ -339,7 +347,7 @@ input{padding-left: 10px;padding-top: 3px;padding-bottom: 3px;}
 }
 /* 푸터 로고 옆 이름 */
 .footer_logo_name{
-    width: 180px; height:30px;
+    width: fit-content; height:30px;
     float: left;
     margin-top: 50px;
     font-weight: 600;
