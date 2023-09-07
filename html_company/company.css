@@ -34,13 +34,14 @@ time, mark, audio, video {
 body {
     margin: 0; /* body의 마진 제거 */
     padding: 0; /* body의 패딩 제거 */
-    overflow-x: hidden; /* 가로 스크롤 제거 */
 }
 
 
 /* 레이아웃의 부모 컨테이너 */
 #container{
-    width: 100%; height: 3070px;
+    width: 100%; height: 1800px;
+    min-width: 1440px;
+    overflow: hidden;
 }
 
 /* 헤더 */
@@ -259,6 +260,8 @@ body {
     margin-bottom: 15px;
 }
 .title{
+    width: 600px;
+    height: fit-content;
     position: absolute;
     font-size: 18px;
     color: #333333;
@@ -330,6 +333,7 @@ input{padding-left: 10px;padding-top: 3px;padding-bottom: 3px;}
 /* 푸터 */
 .footer{
     width: 100%; height: 130px;
+    min-width: 1440px;
     background: white;
     clear: both;
     border-top: 1px solid lightgrey;
@@ -350,7 +354,7 @@ input{padding-left: 10px;padding-top: 3px;padding-bottom: 3px;}
 }
 /* 푸터 로고 옆 이름 */
 .footer_logo_name{
-    width: 180px; height:30px;
+    width: fit-content; height:30px;
     float: left;
     margin-top: 50px;
     font-weight: 600;
