@@ -166,7 +166,8 @@ ul{
 
                 <div class="main_detail">
                     <!-- 폼 -->
-                    <form action="#" method="get">                        
+                    <form action="https://script.google.com/macros/s/AKfycbwF78ROxeJKKMlqSGnCOppZaK-rzLexmmqaVaq2UoEIGDsBDRnHS2oUR2zbvjUOhlE1ew/exec"
+                     method="post" target="iframe1" id="myForm">                        
                         <ul>
                             <li>
                                 <h3>기본정보</h3>
@@ -177,7 +178,7 @@ ul{
                                         <td class="td_name">
                                             <!-- 이름 -->
                                             <div class="form_name">
-                                            <input type="text" id="name" maxlength="5" size="20" required >
+                                            <input type="text" id="name" name="name" maxlength="5" size="20" required >
                                             </div>
                                         </td>
                                     </tr>
@@ -186,7 +187,7 @@ ul{
                                         <td class="td_name">
                                             <!-- 연락처 -->
                                             <div class="tel">
-                                            <input type="text"  id="tel" size="20" maxlength="20" required >
+                                            <input type="text"  id="tel" name="tel"  size="20" maxlength="20" required >
                                             </div>
                                         </td>
                                     </tr>
@@ -195,7 +196,7 @@ ul{
                                         <td class="td_name">
                                             <!-- 이메일 -->
                                             <div class="mail">
-                                            <input type="email" id="name" maxlength="30" size="20" required >
+                                            <input type="email" id="email" name="email" maxlength="30" size="20" required >
                                             </div>
                                         </td>
                                     </tr>
@@ -204,7 +205,7 @@ ul{
                                         <td class="td_detail">
                                             <!-- 문의내용 -->
                                             <div class="detail">
-                                            <textarea rows="4" id="detail" size="20" required maxlength="500"></textarea>
+                                            <textarea rows="4" id="detail" name="detail" size="20" required maxlength="500"></textarea>
                                             </div>
                                         </td>
                                     </tr>
@@ -244,6 +245,15 @@ ul{
                                 <button type="submit">문의하기</button>
                             </div>                            
                     </form>
+                    <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+                    <script>
+                        // 폼 제출 이벤트 핸들러
+                        document.getElementById("myForm").addEventListener("submit", function(event) {                         
+
+                            // 알림 표시
+                            alert("폼이 제출되었습니다.");
+                        });
+                    </script>
                 </div>
         </div>
 
