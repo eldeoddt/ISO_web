@@ -164,25 +164,26 @@ td{
 
                  <!-- 문의하기 -->
                  <div class="contact">
-                    <form action="#" method="get">
+                    <form action="https://script.google.com/macros/s/AKfycbwF78ROxeJKKMlqSGnCOppZaK-rzLexmmqaVaq2UoEIGDsBDRnHS2oUR2zbvjUOhlE1ew/exec"
+                    method="post" target="iframe1" id="myForm"> 
                         <fieldset>
                         <div class="title">문의하기</div>
                 <div class="contact-row">
                     <div class="name-tel">
                         <!-- 이름 -->
                         <div class="name">
-                        <input type="text" id="name" maxlength="5" size="20" required placeholder="이름">
+                        <input type="text" id="name" name="name" maxlength="5" size="20" required placeholder="이름">
                         </div>
         
                         <!-- 연락처 -->
                         <div class="tel">
-                        <input type="text"  id="tel" size="20" maxlength="15" placeholder="연락처">
+                        <input type="text"  id="tel" name="tel" size="20" maxlength="20" placeholder="연락처" required>
                         </div>
                     </div>
         
                         <!-- 문의내용 -->
                     <div class="detail">
-                        <textarea rows="4" id="detail" size="20" required placeholder="문의내용" maxlength="500"></textarea>
+                        <textarea rows="4" id="detail" name="detail" size="20" required placeholder="문의내용" maxlength="500"></textarea>
                     </div>
         
                         <!-- 제출 -->
@@ -193,12 +194,20 @@ td{
                     
                         <!-- 체크박스 -->
                         <div class="check">
-                            <input type="checkbox" id="agree" value="개인정보 동의" required name="agree"checked>
-                            <label for="agree">개인정보취급방침을 동의합니다.</label>
+                            <input type="checkbox" id="agree" value="개인정보 동의" required name="agree" checked>
+                            <label for="agree">개인정보취급방침에 동의합니다.</label>
                             </div>            
                         </fieldset>
                     </form>
-        
+                    <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+                    <script>
+                        // 폼 제출 이벤트 핸들러
+                        document.getElementById("myForm").addEventListener("submit", function(event) {                         
+
+                            // 알림 표시
+                            alert("상담 신청이 완료되었습니다.");
+                        });
+                    </script>        
                 </div>
 
 
